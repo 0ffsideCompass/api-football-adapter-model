@@ -4,6 +4,12 @@ import (
 	"time"
 )
 
+// GetFixturesByDateRequest represents the request body for fetching fixtures by date.
+type GetFixturesByDateAndLeagueRequest struct {
+	Date   string `json:"date"`
+	League string `json:"league"`
+}
+
 // FixtureRequest represents the request body fora specific fixture.
 type FixtureRequest struct {
 	FixtureID string `json:"fixture_id"`
